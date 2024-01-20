@@ -1,5 +1,3 @@
- 
-
 Terraform project 2
 
 Use terraforms to provision the following resources:
@@ -53,4 +51,3 @@ Please note: initialised, format and validate your configuration file before run
 
 
 Finally, version control your code in GitHub and share the link on either whatApp or telegram
-

@@ -1,4 +1,3 @@
- 
 Terraform first project
 
 Follow terraform documentation to provision the following resource:
