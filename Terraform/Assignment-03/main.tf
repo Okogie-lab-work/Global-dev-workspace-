@@ -1,5 +1,5 @@
 resource "aws_instance" "nginx_server" {
-  ami           = "ami-08ceb58c67626d304"
+  ami           = "ami-0e5f882be1900e43b"
   instance_type = "t2.micro"
 
   user_data = <<-EOF
@@ -19,25 +19,26 @@ resource "aws_instance" "nginx_server" {
 
 
 
-
 resource "aws_security_group" "nginx_security_group" {
   name        = "nginx_security_group"
-  description = "Allow ALL TCP"
-
+  description = "Allow Web Traffic on Port 80"
 
   ingress {
-    from_port   = 0
-    to_port     = 65535
+    from_port   = 80 
+    to_port     = 80  
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["0.0.0.0/0"] 
   }
-
 
   egress {
     from_port   = 0
     to_port     = 65535
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "nginx_security_group"
   }
 }
 
