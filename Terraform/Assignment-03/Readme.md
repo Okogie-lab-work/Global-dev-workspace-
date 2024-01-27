@@ -1,31 +1,36 @@
-# Deployment Steps
+# Terraform AWS NGINX Server Configuration
 
-Follow these steps to deploy the NGINX server using Terraform:
+This Terraform configuration sets up an NGINX server on AWS.
 
-## 1. Write the Terraform Configuration
-Create the `main.tf`, `variables.tf`, and `outputs.tf` files in your Terraform project directory. Paste the respective contents into these files as outlined in the project structure.
+It includes the necessary resources such as an EC2 instance and a security group to allow HTTP traffic.
 
-## 2. Initialize Terraform
-Run the following command in your project directory to initialize Terraform:
+## Prerequisites
 
-This will download the necessary Terraform provider plugins.
+Before you begin, ensure you have the following:
+- Terraform installed on your machine
+- An AWS account with the necessary permissions
+- AWS CLI configured with your credentials
 
-## 3. Plan the Deployment
-Execute the following command to preview the actions Terraform will perform:
+## Files
 
-This step will show you what resources Terraform will create, modify, or destroy.
+- `main.tf`: Contains the Terraform configuration for provider and resources.
+- `provider.tf`: Specifies the AWS provider and version.
 
-## 4. Apply the Configuration
-To create the infrastructure, run:
+## Usage
 
+### Step 1: Initialize Terraform
 
-You will need to confirm the action when prompted. This step will actually provision the resources defined in your Terraform configuration.
+Navigate to the directory containing the Terraform configuration files and run the following command to initialize Terraform:
 
-## 5. Access the NGINX Server
-After the successful deployment, use the public IP address displayed in the Terraform output to access your NGINX server. You should see the default NGINX landing page.
+```bash
+terraform init
 
-## 6. Cleanup
-When the resources are no longer needed, you can delete everything that Terraform created to prevent further charges. Run:
+terrafform fmt
 
+terraform validate
 
-Confirm the action when prompted to remove all provisioned resources.
+terraform plan 
+
+terraform apply
+
+terraform destroy 
