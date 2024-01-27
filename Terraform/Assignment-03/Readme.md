@@ -1,8 +1,7 @@
 # Terraform AWS NGINX Server Configuration
 
 This Terraform configuration sets up an NGINX server on AWS.
-
-It includes the necessary resources such as an EC2 instance and a security group to allow HTTP traffic.
+ It includes the necessary resources such as an EC2 instance and a security group to allow HTTP traffic.
 
 ## Prerequisites
 
