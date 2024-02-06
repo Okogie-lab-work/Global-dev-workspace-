@@ -52,12 +52,13 @@ This comprehensive guide covers the steps to create an S3 bucket, upload objects
 }
 
 
-## Additional Resources
 
-Find below the images you uploaded to your S3 bucket for your static website:
 
-- **Image 1**: ![Image 1](https://global-s3-project-okogie.s3.eu-west-2.amazonaws.com/OIP+(1).jpeg)
-- **Image 2**: ![Image 2](https://global-s3-project-okogie.s3.eu-west-2.amazonaws.com/Cloud-Engineer-Jobs_Blog-2048x1158.jpeg)
-- **Static Web Page**: ![Static Web Page](https://global-s3-project-okogie.s3.eu-west-2.amazonaws.com/Staticweb.html)
 
-Replace `my-unique-bucket-name` with the actual name of your S3 bucket when accessing your static website. Ensure that the URLs to your images are correctly referenced in your HTML files to display them on your website.
+
+
+
+
+
+
+
