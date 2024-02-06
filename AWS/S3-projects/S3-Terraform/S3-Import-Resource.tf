@@ -4,12 +4,12 @@ provider "aws" {
 
 resource "aws_s3_bucket" "my_bucket" {
   bucket = "global-s3-project-okogie"
- public_access_block_configuration {
+}
+
+public_access_block_configuration {
     block_public_acls   = false
     block_public_policy = false
   }
-}
-
 
 resource "aws_s3_bucket_object" "object1" {
   bucket = aws_s3_bucket.my_bucket.bucket
